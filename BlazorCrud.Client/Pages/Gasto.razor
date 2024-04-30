@@ -1,0 +1,104 @@
+﻿@page "/gasto"
+@page "/gasto/{idGastoEditar:int}"
+@layout MainLayout
+
+@using BlazorCrud.Shared;
+@using BlazorCrud.Client.Services;
+
+@using Microsoft.AspNetCore.Authorization;
+@attribute [Authorize]
+
+@inject IGastoGeneralService GastoGeneralService;
+@inject ITipoGastoService TipoGastoService;
+@inject NavigationManager navegacion;
+
+
+<h3>@titulo</h3>
+
+<EditForm Model="gasto" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+
+    <div class="mb-3">
+        <label class="form-label">Concepto Gasto</label>
+        <InputText class="form-control" @bind-Value="gasto.ConceptoGasto"></InputText>
+        <ValidationMessage For="@(() => gasto.ConceptoGasto)"></ValidationMessage>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Tipo Gasto</label>
+        <InputSelect class="form-select" @bind-Value="gasto.IdTipoGasto">
+            <option value="0">-- Seleccionar --</option>
+            @foreach(var item in listaTipoGasto)
+            {
+                <option value="@item.IdTipoGasto">@item.Tipo</option>
+
+            }
+        </InputSelect>
+        <ValidationMessage For="@(() => gasto.IdTipoGasto)"></ValidationMessage>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Monto</label>
+        <InputNumber class="form-control" @bind-Value="gasto.Monto"></InputNumber>
+        <ValidationMessage For="@(() => gasto.Monto)"></ValidationMessage>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Fecha Gasto</label>
+        <InputDate class="form-control" @bind-Value="gasto.FechaGasto"></InputDate>
+        <ValidationMessage For="@(() => gasto.FechaGasto)"></ValidationMessage>
+    </div>
+
+    <button class="btn-primary" typeof="submit">
+        @btnTexto
+    </button>
+
+    <a class="btn btn-warning" href="gastogeneral">Volver</a>
+</EditForm>
+
+
+@code {
+
+
+    [Parameter]
+    public int idGastoEditar { get; set; } = 0;
+
+
+    string titulo = string.Empty;
+    string btnTexto = string.Empty;
+
+    GastoGeneralDTO gasto = new GastoGeneralDTO();
+    List<TipoGastoDTO> listaTipoGasto = new List<TipoGastoDTO>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (idGastoEditar != 0)
+        {
+            gasto = await GastoGeneralService.Buscar(idGastoEditar);
+            btnTexto = "Actualizar gasto";
+            titulo = "Editar gasto";
+        }
+        else
+        {
+            gasto.FechaGasto = DateOnly.FromDateTime(DateTime.Now);
+            btnTexto = "Guardar gasto";
+            titulo = "Nuevo gasto";
+        }
+        listaTipoGasto = await TipoGastoService.Lista();
+
+    }
+
+    private async Task OnValidSubmit()
+    {
+        int idDevuelto = 0;
+        if(idGastoEditar == 0)
+            idDevuelto = await GastoGeneralService.Guardar(gasto);
+        else
+            idDevuelto = await GastoGeneralService.Editar(gasto);
+
+
+        if (idDevuelto != 0)
+            navegacion.NavigateTo("/gastogeneral");
+
+    }
+
+
+
+}

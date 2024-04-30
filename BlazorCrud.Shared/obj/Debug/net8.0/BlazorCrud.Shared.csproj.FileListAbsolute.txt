@@ -1,0 +1,24 @@
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos\SolucionBlazor\BlazorCrud.Shared\bin\Debug\net8.0\BlazorCrud.Shared.deps.json
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos\SolucionBlazor\BlazorCrud.Shared\bin\Debug\net8.0\BlazorCrud.Shared.dll
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos\SolucionBlazor\BlazorCrud.Shared\bin\Debug\net8.0\BlazorCrud.Shared.pdb
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.AssemblyInfoInputs.cache
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.AssemblyInfo.cs
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.csproj.CoreCompileInputs.cache
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.dll
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\refint\BlazorCrud.Shared.dll
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.pdb
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\ref\BlazorCrud.Shared.dll
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos ssave\SolucionBlazor\BlazorCrud.Shared\bin\Debug\net8.0\BlazorCrud.Shared.deps.json
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos ssave\SolucionBlazor\BlazorCrud.Shared\bin\Debug\net8.0\BlazorCrud.Shared.dll
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos ssave\SolucionBlazor\BlazorCrud.Shared\bin\Debug\net8.0\BlazorCrud.Shared.pdb
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos ssave\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos ssave\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.AssemblyInfoInputs.cache
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos ssave\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.AssemblyInfo.cs
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos ssave\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.csproj.CoreCompileInputs.cache
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos ssave\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.sourcelink.json
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos ssave\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.dll
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos ssave\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\refint\BlazorCrud.Shared.dll
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos ssave\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.pdb
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos ssave\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\ref\BlazorCrud.Shared.dll
+C:\Users\jprl3\OneDrive\Escritorio\Proyecto Reporte Gastos\SolucionBlazor\BlazorCrud.Shared\obj\Debug\net8.0\BlazorCrud.Shared.sourcelink.json

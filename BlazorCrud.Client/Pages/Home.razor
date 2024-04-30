@@ -1,0 +1,17 @@
+﻿@page "/home"
+@layout MainLayout
+@using Microsoft.AspNetCore.Authorization;
+@using Microsoft.AspNetCore.Components.Authorization;
+@attribute [Authorize]
+
+<PageTitle>Home</PageTitle>
+
+<h1>Bienvenido!</h1>
+
+<AuthorizeView>
+   <Authorized>
+        <h1>Bienvenido @context.User.Identity!.Name</h1>
+   </Authorized>
+</AuthorizeView>
+
+<p>Aquí podrás maejar tus gastos!</p>

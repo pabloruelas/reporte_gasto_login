@@ -1,0 +1,34 @@
+﻿@inherits LayoutComponentBase
+
+@using BlazorCrud.Client.Extensiones;
+@using Microsoft.AspNetCore.Components.Authorization;
+@inject AuthenticationStateProvider autenticationProvider
+@inject NavigationManager navmanager
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+            <a @onclick="CerrarSesion" href="javascript:void(0)">Salir</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code{
+
+    private async Task CerrarSesion()
+    {
+        var autenticacionExt = (AutenticacionExtension)autenticationProvider;
+        await autenticacionExt.ActualizarEstadoAutenticacion(null);
+        navmanager.NavigateTo("/", true);
+    }
+}
+
